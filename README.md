@@ -1,4 +1,7 @@
 # Histogram-of-an-images
+## NAME : HARISH S
+## REGISTER NUMBER : 212224040105
+
 ## Aim
 To obtain a histogram for finding the frequency of pixels in an Image with pixel values ranging from 0 to 255. Also write the code using OpenCV to perform histogram equalization.
 
@@ -26,8 +29,50 @@ The Histogram of gray scale image and color image is shown.
 
 ## Program:
 ```python
-# Developed By: 
-# Register Number: 
+# Developed By: HARISH S
+# Register Number: 212224040105
+
+import cv2
+import numpy as np
+import matplotlib.pyplot as plt
+
+image = cv2.imread('rose.jpg')
+
+gray_image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+
+hist_original = cv2.calcHist([gray_image], [0], None, [256], [0, 256])
+
+equalized_image = cv2.equalizeHist(gray_image)
+
+hist_equalized = cv2.calcHist([equalized_image], [0], None, [256], [0, 256])
+
+plt.figure(figsize=(10, 7))
+
+plt.subplot(2, 2, 1)
+plt.imshow(gray_image, cmap='gray')
+plt.title('Original Grayscale Image')
+plt.axis('off')
+
+plt.subplot(2, 2, 2)
+plt.imshow(equalized_image, cmap='gray')
+plt.title('Equalized Image')
+plt.axis('off')
+
+plt.subplot(2, 2, 3)
+plt.plot(hist_original, color='black')
+plt.title('Original Histogram')
+plt.xlim([0, 256])
+
+
+
+plt.subplot(2, 2, 4)
+plt.plot(hist_equalized, color='black')
+plt.title('Equalized Histogram')
+plt.xlim([0, 256])
+
+plt.tight_layout()
+plt.show()
+
 
 
 
@@ -38,13 +83,17 @@ The Histogram of gray scale image and color image is shown.
 ## Output:
 ### Input Grayscale Image and Color Image
 
+<img width="888" height="428" alt="image" src="https://github.com/user-attachments/assets/622addc0-0427-45c7-9a00-a1e9efadcae0" />
+
 
 ### Histogram of Grayscale Image and any channel of Color Image
 
+<img width="555" height="342" alt="image" src="https://github.com/user-attachments/assets/672c8dc8-d17e-4086-9dbb-25970c9f85f2" />
 
 
 ### Histogram Equalization of Grayscale Image.
 
+<img width="608" height="448" alt="image" src="https://github.com/user-attachments/assets/da0e0fcc-a024-4d39-b520-295832da7101" />
 
 
 
