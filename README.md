@@ -1,5 +1,5 @@
 # Histogram-of-an-images
-## NAME : HARISH S
+## NAME : HARISH S 
 ## REGISTER NUMBER : 212224040105
 
 ## Aim
@@ -29,8 +29,8 @@ The Histogram of gray scale image and color image is shown.
 
 ## Program:
 ```python
-# Developed By: HARISH S
-# Register Number: 212224040105
+# Developed By: ADHARSH VIDYARDH U
+# Register Number: 212224230007
 
 import cv2
 import numpy as np
@@ -83,17 +83,20 @@ plt.show()
 ## Output:
 ### Input Grayscale Image and Color Image
 
-<img width="888" height="428" alt="image" src="https://github.com/user-attachments/assets/622addc0-0427-45c7-9a00-a1e9efadcae0" />
+
+<img width="334" height="412" alt="image" src="https://github.com/user-attachments/assets/ab2f79c4-3997-49b7-af37-1ea1875767e9" />
 
 
 ### Histogram of Grayscale Image and any channel of Color Image
 
-<img width="555" height="342" alt="image" src="https://github.com/user-attachments/assets/672c8dc8-d17e-4086-9dbb-25970c9f85f2" />
+<img width="662" height="442" alt="image" src="https://github.com/user-attachments/assets/8cd9aaaa-6c1f-4fe1-a9af-dc1d276c934e" />
+
 
 
 ### Histogram Equalization of Grayscale Image.
 
-<img width="608" height="448" alt="image" src="https://github.com/user-attachments/assets/da0e0fcc-a024-4d39-b520-295832da7101" />
+<img width="661" height="433" alt="image" src="https://github.com/user-attachments/assets/d99fd411-25e4-4ac5-a3b0-176485d94c09" />
+
 
 
 
